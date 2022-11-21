@@ -1,0 +1,21 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "categoryId": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "name": { "type": "string" },
+      "price": { "type": "number" },
+      "categoryName": { "type": "string" },
+      "description": { "type": [ "string", "null" ] }
+    },
+    "required": [ "id", "name", "price", "description", "categoryId", "categoryName" ]
+  }
+}
